@@ -18,15 +18,27 @@
     justify-content: center;
     align-items: center;
     /* padding-right: 185px; */
-    height: 592px;
 }
 
 .about-container{
-    height: 592px;
+    height: 1070px;
     max-width: 1500px;
     width: 100%;
     padding-left: 185px;
     padding-right: 185px;
+}
+
+.lineContainer{
+    position: relative;
+    margin-left: auto;
+    width: 50%;
+}
+
+.line{
+    position: absolute;
+    z-index: 50;
+    height: 1094px;
+    margin-top: 80px;
 }
 
 
@@ -36,6 +48,7 @@
     /* margin: 0 185px 0 185px; */
     /* flex-wrap: wrap; */
     max-width: 1500px;
+
 }
 
 .logo-container{ 

@@ -15,6 +15,7 @@ import Github from '../../assets/github.png'
 import Instagram from '../../assets/instagram.png'
 import Linkin from '../../assets/linkin.png'
 import Twitter from '../../assets/twitter.png'
+import Line from '../../assets/Line.png'
 
 
 
@@ -23,6 +24,9 @@ const About = () => {
   return (
     <div className="about">
       <div className="about-container">
+        <div className='lineContainer'>
+          <img src={ Line } className='line'/>
+        </div>
         <div className="Firstabout-container">
           <div className="logo-container"> 
             <Lottie animationData={ CCanimation } />
