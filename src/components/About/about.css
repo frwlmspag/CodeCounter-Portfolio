@@ -13,7 +13,7 @@
 
 .about {
     background-color: var(--firstcolor);
-    height: 1216px;
+    height: 1100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,7 +38,7 @@
     position: absolute;
     z-index: 50;
     height: 1094px;
-    margin-top: 80px;
+    margin-top: 70px;
 }
 
 
@@ -53,12 +53,11 @@
 
 .logo-container{ 
     width: 535px;
-    padding-right: 43px;
 }
 
-.Aapp-logo{
-    margin-bottom: 101px;
-    width: 100%;
+.lottie__Logo{
+    width: 500px;
+    /* border: 1px red solid; */
 
 }
 
@@ -67,7 +66,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 94px 123px 94px;
+    padding: 20px 94px 123px 94px;
 }
 
 .text-con-1{ 
@@ -166,6 +165,58 @@ span{
     transform: translateY(2px);
 }
 
+.Secondabout-Container{
+    /* border: 1px solid yellow; */
+    height: 592px;
+    display: flex;
+    max-width: 1500px;
+    flex-wrap: wrap;
+}
+
+.techOwner__Container{
+    /* border: 1px red solid; */
+    height: 592px;
+    width: 497px;
+}
+
+.des__Container{
+    /* border: 1px wheat solid; */
+    height: 592px;
+    width: 497px;
+}
+
+.owner__Img{
+    margin: 0 135px 0 169px;
+}
+
+.owner__Img h1{
+    line-height: normal;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-style: italic;
+    font-weight: 300;
+    color: #fff;
+}
+
+.tech__Con h1{
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    line-height: normal;
+    font-weight: 300;
+    margin: 117px 0 0 108px;
+}
+
+.techstack_Con{
+    box-sizing: border-box;
+    width: 354px;
+    height: 49px;
+    background: #D9D9D9;
+    border-radius: 11px;
+    margin: 0 73px 0 108px;
+}
+
 
 
 
@@ -192,9 +243,23 @@ span{
 }
 
 @media (max-width: 480px) {
-    .Aapp-logo{
+    .logo-container{
         display: none;
     }
+
+    .intro-container{
+        padding: 0;
+    }
+
+    .about-container{
+        padding: 10px 50px 0 50px;
+    }
+
+    .lineContainer{
+        display: none;
+    }
+
+
    
 }
 
@@ -202,6 +267,8 @@ span{
     .Firstabout-container{
         flex-wrap: wrap;
     }
+
+    
     
 }
 

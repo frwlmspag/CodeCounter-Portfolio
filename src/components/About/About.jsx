@@ -16,7 +16,7 @@ import Instagram from '../../assets/instagram.png'
 import Linkin from '../../assets/linkin.png'
 import Twitter from '../../assets/twitter.png'
 import Line from '../../assets/Line.png'
-
+import OwnerImg from '../../assets/OwnerImg.png'
 
 
 const About = () => {
@@ -29,7 +29,7 @@ const About = () => {
         </div>
         <div className="Firstabout-container">
           <div className="logo-container"> 
-            <Lottie animationData={ CCanimation } />
+            <Lottie animationData={ CCanimation } className='lottie__Logo'/>
           </div>
           <div className="intro-container">
             <div className="text-con-1">
@@ -70,6 +70,22 @@ const About = () => {
               </div>
               <button className='hireBtn'>Hire me!</button>
             </div> 
+          </div>
+        </div>
+        <div className="Secondabout-Container">
+          <div className="techOwner__Container">
+            <div className="owner__Img">
+              <img src= { OwnerImg } />
+              <h1>-me</h1>
+            </div>
+            <div className="tech__Con">
+              <h1>In the realm of web development, I excel in:</h1>
+              <div className="techstack_Con"></div>
+            </div>
+
+          </div>
+          <div className="des__Container">
+
           </div>
         </div>
       </div>
