@@ -18,8 +18,18 @@ import Twitter from '../../assets/twitter.png'
 import Line from '../../assets/Line.png'
 import OwnerImg from '../../assets/OwnerImg.png'
 
+import Html from '../../assets/tech/html.svg'
+import Css from '../../assets/tech/css.svg'
+import Js from '../../assets/tech/javascript.svg'
+import Rjs from '../../assets/tech/reactjs.svg'
+import Tcss from '../../assets/tech/tcss.svg'
+import Gh1 from '../../assets/tech/github1.svg'
+
+
+
 
 const About = () => {
+
 
   return (
     <div className="about">
@@ -73,16 +83,24 @@ const About = () => {
           </div>
         </div>
         <div className="Secondabout-Container">
-          <div className="techOwner__Container">
+          <div className="techOwner__Container" data-aos="fade-left">
             <div className="owner__Img">
               <img src= { OwnerImg } />
               <h1>-me</h1>
             </div>
             <div className="tech__Con">
               <h1>In the realm of web development, I excel in:</h1>
-              <div className="techstack_Con"></div>
+              <div className="tech__Stack">
+                <div className="techStack__Con">
+                  <img src= { Html } className='tech__Html'/>
+                  <img src= { Css } className='tech__Css'/>
+                  <img src= { Js } className='tech__Js'/>
+                  <img src= { Rjs } className='tech__Rjs'/>
+                  <img src= { Tcss } className='tech__Tcss'/>
+                  <img src= { Gh1 } className='tech__Gh1'/>
+                </div>
+              </div>
             </div>
-
           </div>
           <div className="des__Container">
 
