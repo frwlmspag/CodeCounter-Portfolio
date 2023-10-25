@@ -84,7 +84,7 @@ h2 {
     line-height: normal;
 }
 
-span{
+.text-con-1-1 span{
     color: white;
     font-family: 'Poppins', sans-serif;
     font-size: 50px;
@@ -186,7 +186,7 @@ span{
 }
 
 .owner__Img{
-    margin: 0 135px 0 169px;
+    margin: 0 150px 0 120px;
 }
 
 .owner__Img h1{
@@ -198,6 +198,17 @@ span{
     color: #fff;
 }
 
+.tech__Con {
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    line-height: normal;
+    font-weight: 300;
+    margin: 100px 90px 0 50px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
 .tech__Con h1{
     color: #fff;
     font-family: 'Poppins', sans-serif;
@@ -205,16 +216,14 @@ span{
     font-style: normal;
     line-height: normal;
     font-weight: 300;
-    margin: 117px 0 0 108px;
 }
 
 .tech__Stack{
     box-sizing: border-box;
-    width: 354px;
+    width: 100%;
     height: 49px;
     background: #D9D9D9;
     border-radius: 11px;
-    margin: 0 73px 0 108px;
 }
 
 .techStack__Con{
@@ -247,6 +256,36 @@ span{
     transform: translateY(-8px);
 }
 
+.first__des{
+    /* border: 1px red solid; */
+    margin: 20px 83px 0 101px;
+    color: #FFF;
+    font-family: 'Poppins',sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-align: left;
+
+    span{
+        font-weight: 700;
+    }
+}
+
+.second__des{
+    margin: 120px 75px 0 101px;
+    color: #FFF;
+    font-family: 'Poppins',sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-align: left;
+
+    span{
+        font-weight: 700;
+    }
+}
 
 
 

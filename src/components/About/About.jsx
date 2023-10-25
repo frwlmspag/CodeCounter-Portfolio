@@ -1,36 +1,40 @@
 import './about.css'
-
+import Tech from './Tech';
+import Socials from './Socials';
+import { useEffect } from 'react';
 
 // import Typewriter from 'typewriter-effect';
 import Typewriter from 'typewriter-effect';
 
+// AOS ANIMATION
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 
 // LOTTIE ANIMATION
 import Lottie from 'lottie-react';
 import CCanimation from '../../assets/cclogo-animation.json'
-
+import 'aos/dist/aos.css'
 
 // ASSETS
-import Github from '../../assets/github.png'
-import Instagram from '../../assets/instagram.png'
-import Linkin from '../../assets/linkin.png'
-import Twitter from '../../assets/twitter.png'
 import Line from '../../assets/Line.png'
 import OwnerImg from '../../assets/OwnerImg.png'
 
-import Html from '../../assets/tech/html.svg'
-import Css from '../../assets/tech/css.svg'
-import Js from '../../assets/tech/javascript.svg'
-import Rjs from '../../assets/tech/reactjs.svg'
-import Tcss from '../../assets/tech/tcss.svg'
-import Gh1 from '../../assets/tech/github1.svg'
 
-
-
+const Type = () => (
+  <Typewriter
+    options={{
+      strings: ['I\'m Wilmar'],
+      autoStart: true,
+      loop: true,
+    }}
+  />
+)
 
 const About = () => {
-
-
+  useEffect(()=> {
+    Aos.init({duration: 500})
+  }, [])
+  
   return (
     <div className="about">
       <div className="about-container">
@@ -45,34 +49,12 @@ const About = () => {
             <div className="text-con-1">
               <div className="text-con-1-1">
                 <h2> Hey there!</h2>
-
-                <span>
-                  <Typewriter
-                    options={{
-                      strings: ['I\'m Wilmar'],
-                      autoStart: true,
-                      loop: true,
-                    }}
-                  />
-                </span>
+                <span> <Type/> </span>
                 <h2>also known as Code Counter. I love creating awesome websites!</h2>
               </div>
               <div className="text-con-1-2">
                 <h2>Connect with me</h2>
-                <div className="socialICons">
-                  <a href="https://github.com/ImCodeCounter" target="_blank" rel="noopener noreferrer">
-                    <img src={Github}/>
-                  </a>
-                  <a href="/" target="_blank" rel="noopener noreferrer">
-                    <img src={Instagram}/>
-                  </a>
-                  <a href="/" target="_blank" rel="noopener noreferrer">
-                    <img src={Linkin}/>
-                  </a>
-                  <a href="https://twitter.com/frwlmspag" target="_blank" rel="noopener noreferrer">
-                    <img src={Twitter}/>
-                  </a>
-                </div>
+                <Socials/>
               </div>
               <div className="text-con-1-3">
                 <h2>Ready to start a project?</h2>
@@ -83,32 +65,32 @@ const About = () => {
           </div>
         </div>
         <div className="Secondabout-Container">
-          <div className="techOwner__Container" data-aos="fade-left">
-            <div className="owner__Img">
-              <img src= { OwnerImg } />
+          <div className="techOwner__Container" data-aos="fade-up-left">
+            <div className="owner__Img" >
+              <img src= { OwnerImg }/>
               <h1>-me</h1>
             </div>
-            <div className="tech__Con">
+            <div className="tech__Con" >
               <h1>In the realm of web development, I excel in:</h1>
               <div className="tech__Stack">
-                <div className="techStack__Con">
-                  <img src= { Html } className='tech__Html'/>
-                  <img src= { Css } className='tech__Css'/>
-                  <img src= { Js } className='tech__Js'/>
-                  <img src= { Rjs } className='tech__Rjs'/>
-                  <img src= { Tcss } className='tech__Tcss'/>
-                  <img src= { Gh1 } className='tech__Gh1'/>
-                </div>
+                <Tech/>
               </div>
             </div>
           </div>
-          <div className="des__Container">
-
+          <div className="des__Container" data-aos="fade-up-right">
+            <div className="first__des">
+              <p>Hello! I&apos;m <span>Wilmar</span>, AKA Code Counter. Building websites is my passion. I love creating unique and captivating digital experiences. From design to code, I turn visions into stunning, user-friendly websites.</p>
+            </div>
+            <div className="second__des">
+              <p>As an <span>accountancy student</span> accountancy student who&apos;s passionate about programming, &quot;Code Counter&quot; reflects my love for precision in both numbers and code. Just as an accountant meticulously counts and organizes, I do the same with every line of code.</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
   )
 }
+
+
 
 export default About;
