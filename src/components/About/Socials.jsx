@@ -7,16 +7,16 @@ const AboutSocials = () => {
   return (
     <div className="socialICons">
         <a href="https://github.com/ImCodeCounter" target="_blank" rel="noopener noreferrer">
-        <img src={Github}/>
+          <img src={Github}/>
         </a>
         <a href="/" target="_blank" rel="noopener noreferrer">
-        <img src={Instagram}/>
+          <img src={Instagram}/>
         </a>
         <a href="/" target="_blank" rel="noopener noreferrer">
-        <img src={Linkin}/>
+          <img src={Linkin}/>
         </a>
         <a href="https://twitter.com/frwlmspag" target="_blank" rel="noopener noreferrer">
-        <img src={Twitter}/>
+          <img src={Twitter}/>
         </a>
     </div>
   )

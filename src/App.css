@@ -11,11 +11,15 @@
 
 :root{
     /* color */
-    --firstcolor: #1A3038;
+    --firstcolor: #0d1425;
     --secondcolor: #122226;
-    --thirdcolor: #196B69;
+    --thirdcolor:  #0f172a;
 
     /* fonts */
-    
+}
+
+
+.SideNav{
+    position: fixed;
 }
 

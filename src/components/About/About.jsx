@@ -12,12 +12,12 @@ import 'aos/dist/aos.css'
 
 // LOTTIE ANIMATION
 import Lottie from 'lottie-react';
-import CCanimation from '../../assets/cclogo-animation.json'
-import 'aos/dist/aos.css'
+import CCanimation from '../../assets/cclogo.json'
 
 // ASSETS
 import Line from '../../assets/Line.png'
 import OwnerImg from '../../assets/OwnerImg.png'
+import { useState } from 'react';
 
 
 const Type = () => (
@@ -34,6 +34,20 @@ const About = () => {
   useEffect(()=> {
     Aos.init({duration: 500})
   }, [])
+
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth)
+
+  useEffect(() => {
+    const handleResize = () => {
+      setScreenWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
   
   return (
     <div className="about">
@@ -64,8 +78,8 @@ const About = () => {
             </div> 
           </div>
         </div>
-        <div className="Secondabout-Container">
-          <div className="techOwner__Container" data-aos="fade-up-left">
+        <div className="Secondabout-Container" id='about'>
+          <div className="techOwner__Container" data-aos={screenWidth <= 768 ? 'fade-up' : 'fade-up-left'}>
             <div className="owner__Img" >
               <img src= { OwnerImg }/>
               <h1>-me</h1>
@@ -77,7 +91,7 @@ const About = () => {
               </div>
             </div>
           </div>
-          <div className="des__Container" data-aos="fade-up-right">
+          <div className="des__Container" data-aos={screenWidth <= 768 ? 'fade-up' : 'fade-up-right'}>
             <div className="first__des">
               <p>Hello! I&apos;m <span>Wilmar</span>, AKA Code Counter. Building websites is my passion. I love creating unique and captivating digital experiences. From design to code, I turn visions into stunning, user-friendly websites.</p>
             </div>
