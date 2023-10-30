@@ -1,9 +1,9 @@
-import Github from '../../assets/github.png'
-import Instagram from '../../assets/instagram.png'
-import Linkin from '../../assets/linkin.png'
-import Twitter from '../../assets/twitter.png'
+import Github from '../../src/assets/github.png'
+import Instagram from '../../src/assets/instagram.png'
+import Linkin from '../../src/assets/linkin.png'
+import Twitter from '../../src/assets/twitter.png'
 
-const AboutSocials = () => {
+const Socials = () => {
   return (
     <div className="socialICons">
         <a href="https://github.com/ImCodeCounter" target="_blank" rel="noopener noreferrer">
@@ -22,4 +22,4 @@ const AboutSocials = () => {
   )
 }
 
-export default AboutSocials
+export default Socials

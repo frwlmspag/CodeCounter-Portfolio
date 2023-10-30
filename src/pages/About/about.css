@@ -10,31 +10,26 @@
     border: 1px yellow solid;
 } */
 
-
 .about {
     background-color: var(--firstcolor);
-    height: 1250px;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
-    /* padding-right: 185px; */
-    border: 1px solid blue;
-
 }
 
 .about-container{
-    height: 1200px;
     max-width: 1500px;
     width: 100%;
     padding-left: 185px;
     padding-right: 185px;
-    border: 1px solid red;
-}
 
+}
 
 .lineContainer{
     position: relative;
     margin-left: auto;
     width: 50%;
+    height: 50px;
 }
 
 .line{
@@ -45,7 +40,6 @@
     color: #fff;
 }
 
-
 .Firstabout-container{
     height: 592px;
     display: flex;
@@ -53,6 +47,7 @@
     /* flex-wrap: wrap; */
     max-width: 1500px;
     justify-content: center;
+    
 }
 
 .logo-container{
@@ -112,7 +107,6 @@
     font-weight: 300;
 }
 
-/* CSS */
 .hireBtn {
     width: 100%;
     align-items: center;

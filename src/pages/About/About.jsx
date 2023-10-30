@@ -1,7 +1,7 @@
 import './about.css'
 import Tech from './Tech';
-import Socials from './Socials';
 import { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 // import Typewriter from 'typewriter-effect';
 import Typewriter from 'typewriter-effect';
@@ -19,7 +19,7 @@ import Line from '../../assets/Line.png'
 import OwnerImg from '../../assets/OwnerImg.png'
 import { useState } from 'react';
 
-
+// TYPEWRITER EFFECT
 const Type = () => (
   <Typewriter
     options={{
@@ -31,10 +31,16 @@ const Type = () => (
 )
 
 const About = () => {
+
+  const navigate = useNavigate()
+
+  // LOTTIE ANIMATION
   useEffect(()=> {
     Aos.init({duration: 500})
   }, [])
 
+
+  // CHANGE LOTTIE ANIMATION ON MX 768px
   const [screenWidth, setScreenWidth] = useState(window.innerWidth)
 
   useEffect(() => {
@@ -66,15 +72,11 @@ const About = () => {
                 <span> <Type/> </span>
                 <h2>also known as Code Counter. I love creating awesome websites!</h2>
               </div>
-              <div className="text-con-1-2">
-                <h2>Connect with me</h2>
-                <Socials/>
-              </div>
               <div className="text-con-1-3">
                 <h2>Ready to start a project?</h2>
                 <h2>Hit me up!</h2>
               </div>
-              <button className='hireBtn'>Hire me!</button>
+              <button className='hireBtn' onClick={() => navigate('/HireMe')}>Hire Me!</button>
             </div> 
           </div>
         </div>

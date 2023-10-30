@@ -1,14 +1,12 @@
 import '../../components/SideNav/sidenav.css'
-import { useState, useEffect } from 'react'
-import Socials from '../About/Socials'
+import { useEffect } from 'react'
+import Socials from '../../assets/Socials'
+
+import KoFi from '../../assets/kofi.png'
 
 // AOS ANIMATION
 import Aos from 'aos';
 import 'aos/dist/aos.css'
-
-
-
-
 
 
 const SideNav = () => {
@@ -17,30 +15,42 @@ const SideNav = () => {
     Aos.init({duration: 500})
   }, [])
 
-  const [show, setShow] = useState(false)
-  const showContent = () => {
-    if (window.scrollY >= 90){
-      setShow(true);
-    } else {
-      setShow(false)
-    }
-  }
+  // const [show, setShow] = useState(false)
+  // const showContent = () => {
+  //   if (window.scrollY >= 90){
+  //     setShow(true);
+  //   } else {
+  //     setShow(false)
+  //   }
+  // }
 
-  useEffect(() => {
-    window.addEventListener('scroll', showContent);
+  // useEffect(() => {
+  //   window.addEventListener('scroll', showContent);
 
-    return () => {
-      window.removeEventListener('scroll', showContent);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener('scroll', showContent);
+  //   };
+  // }, []);
 
 
   return (
     <div className="sidenav__container">
-      <div className={show ? 'sidenav__contents' : 'sidenav__contents hidden'} data-aos={show ? 'fade-right' : ''}>
-        <div className={show ? 'sidenav__socials' : 'hidden'}>
-          <Socials/>
+      <div className="left__container">
+        <div className='sidenav__contents' data-aos='fade-right'>
+          <div className='sidenav__socials'>
+            <Socials/>
+          </div>
         </div>
+      </div>
+
+      <div className="right__container">
+      <div className='right__sidenav__contents'>
+        <div className="ko-fi">
+          <a href="https://ko-fi.com/imcodecounter" target="_blank" rel="noopener noreferrer">
+            <img src={KoFi}/>
+          </a>
+        </div>
+      </div>
       </div>
     </div>
   )
