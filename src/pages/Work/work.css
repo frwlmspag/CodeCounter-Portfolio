@@ -1,0 +1,8 @@
+
+
+.work {
+    background-color: var(--firstcolor);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}

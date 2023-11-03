@@ -1,7 +1,7 @@
-import Github from '../../src/assets/github.png'
-import Instagram from '../../src/assets/instagram.png'
-import Linkin from '../../src/assets/linkin.png'
-import Twitter from '../../src/assets/twitter.png'
+import Github from '../../assets/github.png'
+import Instagram from '../../assets/instagram.png'
+import Linkin from '../../assets/linkin.png'
+import Twitter from '../../assets/twitter.png'
 
 const Socials = () => {
   return (
@@ -9,7 +9,7 @@ const Socials = () => {
         <a href="https://github.com/ImCodeCounter" target="_blank" rel="noopener noreferrer">
           <img src={Github}/>
         </a>
-        <a href="/" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.instagram.com/frwlmspag/" target="_blank" rel="noopener noreferrer">
           <img src={Instagram}/>
         </a>
         <a href="/" target="_blank" rel="noopener noreferrer">

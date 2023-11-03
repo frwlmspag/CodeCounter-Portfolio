@@ -1,8 +1,12 @@
+import './work.css'
 
+import Gear from '../../components/Gear/Gear'
 
 const Work = () => {
   return (
-    <div>Work</div>
+    <div className="work">
+      <Gear/>
+    </div>
   )
 }
 

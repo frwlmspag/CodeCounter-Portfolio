@@ -26,7 +26,6 @@
 }
 
 .lineContainer{
-    position: relative;
     margin-left: auto;
     width: 50%;
     height: 50px;
@@ -35,19 +34,19 @@
 .line{
     position: absolute;
     z-index: 50;
-    height: 1094px;
+    height: 1000px;
     margin-top: 70px;
     color: #fff;
+
 }
 
 .Firstabout-container{
-    height: 592px;
+    height: 450px;
     display: flex;
     /* margin: 0 185px 0 185px; */
     /* flex-wrap: wrap; */
-    max-width: 1500px;
+    max-width: 1130px;
     justify-content: center;
-    
 }
 
 .logo-container{
@@ -160,7 +159,6 @@
 }
 
 .Secondabout-Container{
-    /* border: 1px solid yellow; */
     height: 592px;
     display: flex;
     max-width: 1500px;
@@ -280,6 +278,9 @@
     /* border: 1px red solid; */
     padding-left: 101px;
     padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 @media (max-width: 900px) {
@@ -323,14 +324,14 @@
 
     .first__des{
         font-size: 13px;
-        width: 100%;
         margin-top: 0;
+        width: 450px;
     }
 
     .second__des{
         margin-top: 20px;
         font-size: 13px;
-        width: 100%;
+        width: 450px;
     }
 
     .lineContainer{
@@ -347,7 +348,6 @@
 
     .des__Container{
         height: 50vh;
-        width: 600px;
         padding: 0 60px;
     }
 
@@ -371,16 +371,28 @@
     }
 
     .Firstabout-container{
-        height: 90vh;
+        height: 70vh;
     }
 
+}
 
+@media (max-width: 562px) {
+    .des__Container{
+        height: 200px;
+        width: 400px;
+    }
 
+    .first__des{
+        width: 400px;
+    }
 
+    .second__des{
+        width: 400px;
+    }
 
-
-
-
+    .about-container{
+        height: 1100px;
+    }
 }
 
 

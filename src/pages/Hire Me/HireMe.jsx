@@ -1,7 +1,11 @@
+import './hireme.css'
+import Gear from '../../components/Gear/Gear'
 
 const HireMe = () => {
   return (
-    <div>HireMe</div>
+    <div className="hireMe">
+      <Gear/>
+    </div>
   )
 }
 
