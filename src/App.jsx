@@ -19,7 +19,7 @@ function App() {
       <div className='NavBar'>
         <Navbar/>
           <Routes>
-            <Route path='/' element={<About />} />
+            <Route path='/CodeCounter-Portfolio' element={<About />} />
             <Route path='/About'element={<About />}/>
             <Route path='/HireMe'element={<HireMe />}/>
             <Route path='/Work'element={<Work />}/>
