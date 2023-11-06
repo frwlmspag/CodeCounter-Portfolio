@@ -18,12 +18,12 @@ function App() {
     <div className='Main'>
       <div className='NavBar'>
         <Navbar/>
-        <Routes>
-          <Route path='/' element={<About />} />
-          <Route path='/About'element={<About />}/>
-          <Route path='/HireMe'element={<HireMe />}/>
-          <Route path='/Work'element={<Work />}/>
-        </Routes>
+          <Routes>
+            <Route path='/' element={<About />} />
+            <Route path='/About'element={<About />}/>
+            <Route path='/HireMe'element={<HireMe />}/>
+            <Route path='/Work'element={<Work />}/>
+          </Routes>
       </div>
       <div className="Footer">
         <Footer/>
